@@ -1,11 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MirkWood</title>
+    <title>Mirkwood</title>
 </head>
+
 <body>
-    <h1>Bienvenidos a MirkWood La pagina de la hostia que vende hormiguerazos papá</h1>
-</body>
-</html>
+
+    <%- include('partials/header') %>
+
+        <main>
+            <section class="welcome">
+                <div class="text_welcome">
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rem, deserunt! Cupiditate sunt nulla
+                        perferendis possimus adipisci. Mollitia libero odit illum? Fugit voluptates ex expedita animi
+                        facilis quas, accusamus ratione harum!</p>
+                </div>
+                <div class="image_welcome">
+                    <h4>Imagen del welcome</h4>
+                </div>
+            </section>
+            <section class="lastAdd">
+                <div class="text_las">
+                    <h4>Ultimo añadido</h4>
+                </div>
+                <div class="lastItems">
+                    <div>elemento</div>
+                    <div>elemento</div>
+                    <div>elemento</div>
+                </div>
+
+            </section>
+            <section class="payment">
+                <div class="garantee">
+                    <div>metodo seguro</div>
+                    <div>mejores precios</div>
+                    <div>excelete atencion</div>
+                </div>
+                <div class="payment_image">
+                    <div>Imagen de payment</div>
+                </div>
+            </section>
+        </main>
+
+        <%- include('partials/footer') %>
