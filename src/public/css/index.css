@@ -1,0 +1,56 @@
+main {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin: auto;
+    height: 80vh;
+    justify-content: space-around;
+}
+
+
+.welcome {
+    display: flex;
+}
+
+.text_welcome {
+    width: 50%;
+}
+
+.image_welcome {
+    width: 50%;
+
+}
+
+.img-home {
+    width: 100px;
+    height: 200px;
+    object-fit: contain;
+    box-sizing: border-box;
+}
+
+
+.lastAdd {
+    display: flex;
+    flex-direction: column;
+}
+
+.lastItems {
+    display: flex;
+    justify-content: space-around;
+}
+
+.payment {
+    display: flex;
+}
+
+.garantee {
+    display: flex;
+    width: 75%;
+    justify-content: space-around;
+}
+
+.payment_image {
+    display: flex;
+    width: 25%;
+    justify-content: space-around;
+}

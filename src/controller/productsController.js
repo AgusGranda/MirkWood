@@ -3,34 +3,34 @@ const controller = {
         res.render("index");
     },
     hormigas: (req,res) =>{
-
+        res.render("hormigas");
     },
     hormigueros: (req,res) => { 
-        res.render("index");
+        res.render("hormigueros");
     },
     ofertas: (req,res) => { 
-        res.render("index");
+        res.render("ofertas");
     },
     about: (req,res) => { 
-        res.render("index");
+        res.render("about");
     },
     productCart: (req,res) => { 
-        res.render("index");
+        res.render("productCart");
     },
     productDetail: (req,res) => { 
-        res.render("index");
+        res.render("productDetail");
     },
     productForm: (req,res) => { 
-        res.render("index");
+        res.render("productForm");
     },
     process_productForm: (req,res) => { 
-        res.render("index");
+        res.render("");
     },
     productEditForm: (req,res) => { 
-        res.render("index");
+        res.render("productEditForm");
     },
     process_productEditForm: (req,res) => { 
-        res.render("index");
+        res.render("");
     },
     
 }
