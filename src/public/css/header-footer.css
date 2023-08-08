@@ -10,7 +10,6 @@
     justify-content: space-between;
     text-decoration: none;
     font-size: 19px;
-    
     border-bottom-left-radius: 15px;
     border-bottom-right-radius: 15px;
 }
@@ -68,21 +67,42 @@ footer{
     display: flex;
     height: 15vh;
     background-color: grey;
-    
+    font-size: 15px;
 }
 
-.logoImageFooter{
+.content_footer {
     display: flex;
-    width: 30%;
-    align-items: center;
-    justify-content: center;
-    font-family: 'Raleway', sans-serif;
-}
-
-.infoFooter{
-    display: flex;
-    width: 70%;
     justify-content: space-around;
-    align-items: center;
-  
+    width: 80%;
+    height: 80%;
+    margin: auto;
+}
+
+.media{ 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+}
+.icons_media {
+    display: flex;
+    justify-content: space-around;
+    font-size: 25px;
+}
+
+.contact { 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 90%;
+}
+.contact h4 i {
+    font-size: 20px;
+}
+
+.sections{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 90%;
 }
