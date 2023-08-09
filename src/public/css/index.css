@@ -1,56 +1,136 @@
 main {
     display: flex;
     flex-direction: column;
-    width: 80%;
+    width: 65%;
     margin: auto;
-    height: 80vh;
     justify-content: space-around;
+    font-family: 'Raleway', sans-serif;
+    background-image: url(/src/public/images/fondo-main.jpg);
 }
 
+
+
+
+.welcome_container{
+    display: flex;
+    height: 700px;
+    align-items: center;
+}
 
 .welcome {
     display: flex;
+    height: 387px;
+ 
 }
 
 .text_welcome {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
     width: 50%;
 }
-
+.text_welcome h1 {
+    font-size: 60px;
+}
+.text_welcome h4 {
+    font-size: 25px;
+}
 .image_welcome {
     width: 50%;
 
 }
 
 .img-home {
-    width: 100px;
-    height: 200px;
-    object-fit: contain;
-    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 100px;
 }
+
+
+
+
 
 
 .lastAdd {
     display: flex;
     flex-direction: column;
+    height: 350px;
+    justify-content: space-around;
 }
 
-.lastItems {
+.text_last {
+    font-size: 25px;
+    padding-bottom: 30px;
+
+}
+
+.lastItem {
     display: flex;
-    justify-content: space-around;
+    flex-direction: column;
+    width: fit-content;
+    margin-left: 25px;
+    border: 1px solid brown;
+}
+
+
+
+
+
+
+
+.payment_container {
+    display: flex;
+    height: 700px;
+    align-items: center;
 }
 
 .payment {
     display: flex;
+    height: 500px;
+    justify-content: space-between;
 }
 
-.garantee {
+
+.pagoSeguro,.mejoresPrecios , .atencionCliente{
     display: flex;
-    width: 75%;
+    flex-direction: column;
     justify-content: space-around;
+    width: 22%;
+    background-color: rgb(204, 202, 202);
+    align-items: center;
+    border-radius: 18px;
 }
+
+.pagoSeguro_icon, .mejoresPrecios_icon, .atencionCliente_icon {
+    display: flex;
+    align-items: center;
+    height: 20%;
+    font-size: 35px;
+}
+
+.content_PagoSeguro, .content_precios,.content_atencionCliente {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 70%;
+}
+.content_PagoSeguro p ,.content_precios p , .content_atencionCliente p {
+    padding: 20px;
+    text-align: center;
+}
+
 
 .payment_image {
     display: flex;
-    width: 25%;
-    justify-content: space-around;
+    width: 22%;
+    align-items: center;
+    
+}
+
+.payment_image img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 50%;
 }

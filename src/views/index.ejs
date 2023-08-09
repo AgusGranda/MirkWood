@@ -11,38 +11,87 @@
         <%- include('partials/header') %>
 
             <main>
-                <section class="welcome">
-                    <div class="text_welcome">
-                        <h1>Mirkwood: Tienda de hormigas online</h1>
-                        <h4>Venta de hormigueros especializados en hormigas de la madera.</h4>
-                        <p>Tienda de hormigas especializada en su cría. Aquí encontrarás todo lo que necesitas para
-                            disfrutar al máximo de esta actividad. Entra y elige el modelo de hormiguero que más se
-                            ajuste a tus preferencias, así como el resto de accesorios que te ayuden a cubrir todas las
-                            necesidades de tus hormigas.</p>
-                    </div>
-                    <div class="image_welcome">
-                       <img class="img-home" src="/images/img-home.jpg" alt="">
-                    </div>
-                </section>
+                <div class="welcome_container">
+                    <section class="welcome">
+                        <div class="text_welcome">
+                            <h1>Mirkwood:<br> Tienda de <br> hormigas online</h1>
+                            <h4>Venta de hormigueros de madera.</h4>
+                            <p>Tienda de hormigas especializada en su cría. Aquí encontrarás todo lo que necesitas para
+                                disfrutar al máximo de esta actividad. Entra y elige el modelo de hormiguero que más se
+                                ajuste a tus preferencias, así como el resto de accesorios que te ayuden a cubrir todas
+                                las
+                                necesidades de tus hormigas.</p>
+                        </div>
+                        <div class="image_welcome">
+                            <img class="img-home" src="/images/img-home.jpg" alt="">
+                        </div>
+                    </section>
+                </div>
                 <section class="lastAdd">
                     <div class="text_last">
                         <h4>Ultimo añadido</h4>
                     </div>
-                    <div class="lastItems">
-                        <div>elemento</div>
+                    <div class="lastItem">
+                        <div>
+                            foto
+                        </div>
+                        <div>
+                            <p>nombre produto</p>
+                            <p>precio producto</p>
+                            <p>Ver producto</p>
+                        </div>
                     </div>
 
                 </section>
-                <section class="payment">
-                    <div class="garantee">
-                        <div>metodo seguro</div>
-                        <div>mejores precios</div>
-                        <div>excelete atencion</div>
-                    </div>
-                    <div class="payment_image">
-                        <div>Imagen de payment</div>
-                    </div>
-                </section>
+                <div class="payment_container">
+
+                    <section class="payment">
+
+                        <div class="pagoSeguro">
+                            <div class="pagoSeguro_icon">
+                                <p><i class="fa-regular fa-credit-card"></i></p>
+                            </div>
+                            <div class="content_PagoSeguro">
+                                <p>Pagos Seguros</p>
+                                <p>Las compras realizadas en nuestra tienda on-line son completamente seguras: tus
+                                    datos
+                                    personales y bancarios quedan protegidos y no son accesibles a personas no
+                                    autorizadas en ningún momento del proceso.</p>
+                            </div>
+                        </div>
+
+                        <div class="mejoresPrecios">
+                            <div class="mejoresPrecios_icon">
+                              <p> <i class="fa-solid fa-coins"></i></p>  
+                            </div>
+                            <div class="content_precios">
+                                <p>Mejores precios</p>
+                                <p>En Mirkwood nos esforzamos para que tengas los mejores productos al mejor
+                                    precio.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="atencionCliente">
+                            <div class="atencionCliente_icon">
+                                <p> <i class="fa-regular fa-comments"></i> </p>
+                            </div>
+                            <div class="content_atencionCliente">
+                                <p>Atencion al cliente</p>
+                                <p>Atención personalizada antes, durante y después del proceso de compra a través de
+                                    nuestro sistema de chat online. Te ayudamos sobre cualquier duda que tengas
+                                    sobre la
+                                    cría de las especies de hormigas más comunes que se encuentran en Buenos Aires.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="payment_image">
+                            <img src="/images/img-payment.jpg" alt="">
+                        </div>
+                    </section>
+                </div>
+
             </main>
 
             <%- include('partials/footer') %>

@@ -1,6 +1,6 @@
 *{
     margin: 0;
-    font-family: 'Raleway', sans-serif;
+    
 }
 .nav {
     display: flex;
@@ -12,6 +12,7 @@
     font-size: 19px;
     border-bottom-left-radius: 15px;
     border-bottom-right-radius: 15px;
+    font-family: 'Raleway', sans-serif;
 }
 
 .logoImageHeader {
@@ -66,8 +67,10 @@
 footer{
     display: flex;
     height: 15vh;
-    background-color: grey;
+    background-color: #252525;
     font-size: 15px;
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .content_footer {
