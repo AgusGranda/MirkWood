@@ -1,3 +1,6 @@
+body {
+    background-image: url("/images/fondo.png");
+}
 main {
     display: flex;
     flex-direction: column;
@@ -5,7 +8,7 @@ main {
     margin: auto;
     justify-content: space-around;
     font-family: 'Raleway', sans-serif;
-    background-image: url(/src/public/images/fondo-main.jpg);
+    
 }
 
 
@@ -28,12 +31,16 @@ main {
     flex-direction: column;
     justify-content: space-around;
     width: 50%;
+   
 }
 .text_welcome h1 {
     font-size: 60px;
 }
 .text_welcome h4 {
     font-size: 25px;
+}
+.text_welcome p {
+    padding-right: 80px;
 }
 .image_welcome {
     width: 50%;
@@ -44,7 +51,7 @@ main {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    border-radius: 100px;
+    border-radius: 150px;
 }
 
 
@@ -52,28 +59,64 @@ main {
 
 
 
-.lastAdd {
+
+.lastAdd_container{ 
     display: flex;
-    flex-direction: column;
-    height: 350px;
-    justify-content: space-around;
+    height: 500px;
+   
+}
+
+.lastAdd{
+    height: 400px;
 }
 
 .text_last {
     font-size: 25px;
-    padding-bottom: 30px;
+    height: 25%;
 
 }
 
-.lastItem {
+.items_container{
+    display: flex;
+    width: 65vw;
+}
+
+
+.item_box {
     display: flex;
     flex-direction: column;
-    width: fit-content;
+    height: 300px;
+    justify-content: space-around;
     margin-left: 25px;
-    border: 1px solid brown;
+    background-color: rgb(204, 202, 202);
+    border-radius: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    width: 200px;
+   
 }
 
+.lastItem_img{
+    height: 60%;
+    padding: 15px;
+    border-radius: 18px;
+}
 
+.campo_img{
+    width: 100%;
+    height: 100%;
+    object-fit:cover;
+    border-radius: 18px;
+}
+
+.lastItem_desciption{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    text-align: center;
+    height: 40%;
+
+}
 
 
 
@@ -133,4 +176,39 @@ main {
     height: 300px;
     object-fit: cover;
     border-radius: 50%;
+}
+
+
+@media (max-width: 1025px) {
+    main {
+        width: 100%;
+    }
+    .welcome {
+        margin: auto;
+        width: 80%
+    }
+    .text_welcome {
+        width: 100%;
+    }
+    .image_welcome {
+        display: none;
+    }
+    .lastAdd_container {
+        margin: auto;
+        width: 80%
+    }
+    .payment_image {
+        display: none;
+    }
+    .payment {
+        justify-content: space-around;
+        width: 100%;
+        
+    }
+    .pagoSeguro,.mejoresPrecios , .atencionCliente{
+        width: 230px;
+    }
+    .payment_container{
+       
+    }
 }

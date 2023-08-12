@@ -1,6 +1,7 @@
 *{
     margin: 0;
     
+    
 }
 .nav {
     display: flex;
@@ -28,8 +29,6 @@
     justify-content: space-around;
     width: 50%;
     justify-items: center;
-    
-   
 }
 
 .list li {
@@ -37,7 +36,7 @@
     justify-content: center;
     align-items: center;
     height: 40px;
-    width: 100px;
+    width: 120px;
     
 }
 .list li a {
@@ -90,7 +89,11 @@ footer{
 .icons_media {
     display: flex;
     justify-content: space-around;
-    font-size: 25px;
+    font-size: 30px;
+}
+.icons_media i {
+    background-color: #fff;
+    color: #252525;
 }
 
 .contact { 
@@ -108,4 +111,17 @@ footer{
     flex-direction: column;
     justify-content: space-around;
     height: 90%;
+}
+
+@media (max-width: 1025px) {
+    .logoImageHeader {
+        width: 20%;
+    }
+    .list{
+        width: 60%;
+        padding: 0px
+    }
+    .log{
+        padding: 0px
+    }
 }
