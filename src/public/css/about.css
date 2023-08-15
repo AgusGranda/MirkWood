@@ -1,0 +1,44 @@
+.text_container {
+    width: 100vw;
+    margin:0;
+    border-bottom: 1px solid rgb(204, 202, 202);
+}
+
+
+.text {
+    margin: auto;
+    display: flex;
+    align-items: center;
+    width: 65%;
+    height: 200px;
+    font-size: 55px;
+}
+
+.about_container {
+    display: flex;
+    height: 65vh;
+    margin: auto;
+}
+
+.about_text {
+    display: flex;
+    width: 50%;
+    font-size: 20px;
+    margin: auto;
+    justify-content: center;
+}
+
+.about_text p {
+    width: 80%;
+    height: 80%;
+}
+
+.about_img_container{
+    width: 50%;
+}
+
+.about_img{
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}

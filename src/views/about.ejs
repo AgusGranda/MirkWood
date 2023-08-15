@@ -2,23 +2,43 @@
 <html lang="en">
 
 <%- include('partials/head') %>
-    
+    <link rel="stylesheet" href="/css/about.css">
     <title>About</title>
-</head>
+    </head>
 
-<body>
+    <body>
 
-    <%- include('partials/header') %>
+        <%- include('partials/header') %>
 
-        <main>
-            <aside class="imageAside">
-                <h3>Imagen del about</h3>
-            </aside>
-            <article class="aboutUs">
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laudantium necessitatibus ex cum cupiditate
-                    voluptas eos eius similique, laboriosam est explicabo exercitationem magni minima? Nisi perferendis
-                    fugiat numquam rerum, quam impedit!</p>
-            </article>
-        </main>
+            <main>
+                <div class="text_container">
+                    <div class="text">
+                        <h3>Quienes somos</h3>
+                    </div>
+                </div>
 
-        <%- include('partials/footer') %>
+                <article class="about_container">
+                    <div class="about_text">
+                        <p>Somos una tienda on-line especializada en hormigas y todo tipo de productos relacionados con
+                            su cría.<br>
+                            Disponemos de una gran variedad de hormigueros adaptados a las necesidades de las diferentes
+                            especies de hormigas que podemos encontrar en la península. Pídenos asesoramiento y te
+                            aconsejaremos sobre cuáles son los mejores cuidados que le puedes dar a tu colonia, cuál es
+                            el hormiguero que mejor se adapta a ella y cuáles son los posibles accesorios que te
+                            ayudarán con su cría.<br>
+                            Consideramos que este gran hobby que es la cría de hormigas se adapta a todo tipo de
+                            personas de todas las edades. Se trata de una actividad que se puede compartir entre padres
+                            e hijos, generando así un fuerte vínculo y enseñando a los más jóvenes valores tales como
+                            responsabilidad y respeto por la naturaleza y los seres vivos, por pequeños que sean.<br>
+                            Hormigueando.com nace desde la ilusión y de la pasión por las hormigas. Esperamos que sea de
+                            vuestro agrado y que disfrutéis tanto de esta actividad como nosotros.
+
+                        </p>
+                    </div>
+                    <div class="about_img_container">
+                        <img class="about_img" src="/images/about_img.jpg" alt="">
+                    </div>
+                </article>
+            </main>
+
+            <%- include('partials/footer') %>
