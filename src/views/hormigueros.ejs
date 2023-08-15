@@ -2,7 +2,8 @@
 <html lang="en">
 
 <%- include('partials/head') %>
-    <title>Nest</title>
+<link rel="stylesheet" href="/css/hormigueros.css">
+    <title>Hormigueros</title>
 </head>
 
 <body>
@@ -10,32 +11,30 @@
     <%- include('partials/header') %>
 
         <main>
-            <section class="camponotus_nest">
-                <div class="camponotus_text">
-
+            <div class="ants_text_container">
+                <div class="ants_text">
+                    <h3>Hormigueros</h3>
                 </div>
-                <div class="camponotus_nest_available">
+            </div>
 
+
+            <section class="ant_container">
+                <div class="ant_content">
+                    <div class="ant_box_container">
+                        <div class="ant_box">
+                            <div class="ant_img_container">
+                                <img class="ant_img" src="/images/hormigas/Reina-camponotus.jpg" alt="fotoProducto">
+                            </div>
+                            <div class="ant_desciption">
+                                <b>Hormiguero de madera buenardo</b>
+                                <p>$12.000</p>
+                                <p>Ver producto</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </section>
-            <section class="pseudomyrmex_nest">
-                <div class="pseudomyrmex_text">
 
-                </div>
-                <div class="pseudomyrmex_nest_available">
-
-                </div>
-
-            </section>
-            <section class="crematogaster_nest">
-                <div class="crematogaster_text">
-
-                </div>
-                <div class="crematogaster_nest_available">
-
-                </div>
-
-            </section>
         </main>
 
         <%- include('partials/footer') %>

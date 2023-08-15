@@ -1,0 +1,85 @@
+body {
+    background-image: url("/images/fondo.png");
+}
+
+.ants_text_container {
+ width: 100vw;
+ margin:0;
+ border-bottom: 8px,solid, red
+}
+
+.ants_text {
+    width: 65%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    width: 65%;
+    height: 200px;
+    font-size: 55px;
+
+}
+
+
+
+.ant_container{
+    height: 400px;
+    width: 65%;
+    margin: auto;
+}
+
+.ant_content {
+    height: 70%;
+}
+
+.ant_text {
+    height: 20%;
+    font-size: 25px;
+    padding-left: 20px;
+}
+
+.ant_box_container {
+    height: 80%;
+    display: flex;
+    justify-content: space-around;
+}
+
+
+
+.ant_box {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: rgb(204, 202, 202);
+    border-radius: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    height: 100%;
+    font-size: 16px;
+    width: 150px;
+   
+}
+
+.ant_img_container{
+    height: 60%;
+    border-radius: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ant_img{
+    display: flex;
+    width: 80%;
+    height: 80%;
+    margin: auto;
+    object-fit:cover;
+    border-radius: 18px;
+
+}
+
+.ant_desciption{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: center;
+    height: 40%;
+}

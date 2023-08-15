@@ -62,49 +62,56 @@ main {
 
 .lastAdd_container{ 
     display: flex;
-    height: 500px;
+    height: 400px;
    
 }
 
 .lastAdd{
-    height: 400px;
+    height: 70%;
+    width: 100%
 }
 
 .text_last {
+    height: 20%;
     font-size: 25px;
-    height: 25%;
+    padding-left: 20px;
 
 }
 
 .items_container{
+    height: 80%;
     display: flex;
-    width: 65vw;
+    justify-content: space-around;
+
 }
 
 
 .item_box {
     display: flex;
     flex-direction: column;
-    height: 300px;
     justify-content: space-around;
-    margin-left: 25px;
     background-color: rgb(204, 202, 202);
     border-radius: 18px;
     font-family: Arial, Helvetica, sans-serif;
+    height: 100%;
     font-size: 16px;
-    width: 200px;
+    width: 150px;
    
 }
 
 .lastItem_img{
     height: 60%;
-    padding: 15px;
     border-radius: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .campo_img{
-    width: 100%;
-    height: 100%;
+    display: flex;
+    width: 80%;
+    height: 80%;
+    margin: auto;
     object-fit:cover;
     border-radius: 18px;
 }
@@ -112,7 +119,7 @@ main {
 .lastItem_desciption{
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: space-around;
     text-align: center;
     height: 40%;
 
@@ -179,6 +186,9 @@ main {
 }
 
 
+
+
+
 @media (max-width: 1025px) {
     main {
         width: 100%;
@@ -193,10 +203,11 @@ main {
     .image_welcome {
         display: none;
     }
-    .lastAdd_container {
+    .lastAdd {
         margin: auto;
         width: 80%
     }
+    
     .payment_image {
         display: none;
     }
@@ -208,7 +219,44 @@ main {
     .pagoSeguro,.mejoresPrecios , .atencionCliente{
         width: 230px;
     }
+}
+
+@media (max-width: 769px) {
+    .item_box{
+        width: 27%;
+    }
+}
+
+@media (max-width: 425px) {
+    .welcome {
+        width: 100%;
+        height: 80%;
+        text-align: center;
+    }
+    .text_welcome p {
+        padding: 0px;
+    }
+    body{
+        background-image: none;
+    }
     .payment_container{
+        height: 1000px;
+    }
+    .payment{
+        flex-wrap: wrap;
+        width: 100%;
+        height: 100%;
+        justify-content:space-around
+    }
+    .pagoSeguro,.mejoresPrecios , .atencionCliente{
+        width: 45%;
+        height: 47%;
+    }
+    .content_PagoSeguro, .content_precios,.content_atencionCliente{
+        height: 90%;
+    }
+    .item_box {
+        width: 45%;
        
     }
 }
