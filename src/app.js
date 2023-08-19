@@ -14,8 +14,10 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 // routes
 const productsRouter = require("./router/productsRouter");
+const userRouter = require("./router/usersRouter")
 
 app.use("/", productsRouter);
+app.use("/",userRouter);
 
 // end routes
 

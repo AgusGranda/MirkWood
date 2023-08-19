@@ -1,3 +1,7 @@
+body {
+    font-family: Arial, Helvetica, sans-serif
+}
+
 .text_container {
     width: 100vw;
     margin:0;
@@ -6,6 +10,7 @@
 
 
 .text {
+    width: 65%;
     margin: auto;
     display: flex;
     align-items: center;
@@ -16,8 +21,9 @@
 
 .about_container {
     display: flex;
-    height: 65vh;
+    height: 70%;
     margin: auto;
+    background-color: rgb(238, 237, 237);
 }
 
 .about_text {
@@ -31,6 +37,7 @@
 .about_text p {
     width: 80%;
     height: 80%;
+    font-family: Arial, Helvetica, sans-serif
 }
 
 .about_img_container{

@@ -1,11 +1,12 @@
 body {
     background-image: url("/images/fondo.png");
+    font-family: Arial, Helvetica, sans-serif
 }
 
 .ants_text_container {
  width: 100vw;
  margin:0;
- border-bottom: 8px,solid, red
+ border-bottom: 1px solid rgb(204, 202, 202);
 }
 
 .ants_text {
@@ -25,6 +26,7 @@ body {
     height: 400px;
     width: 65%;
     margin: auto;
+    padding: 20px;
 }
 
 .ant_content {

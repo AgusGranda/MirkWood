@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
     <%- include('partials/head') %>
-    
+    <link rel="stylesheet" href="/css/login.css">
     <title>Login</title>
 </head>
 <body>
@@ -9,7 +9,23 @@
  <%- include('partials/header') %>
 
         <main>
-           <h1>Este seria el login</h1>
+            <div class="text_container">
+                <div class="text">
+                    <h3>Iniciar sesion</h3>
+                </div>
+            </div>
+
+            <div class="form_container">
+                <form action="">
+                    <input type="email" name="email" id="email" placeholder="Email">
+                    
+                    <input type="password" name="password" id="password" placeholder="Password">
+                    
+                    <button type="submit">Ingresar</button>
+                </form>
+            </div>
+
+
         </main>
 
 <%- include('partials/footer') %>
