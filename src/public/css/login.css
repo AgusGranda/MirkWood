@@ -3,7 +3,6 @@ body {
 }
 
 .text_container {
-    
     margin: 0;
     border-bottom: 1px solid rgb(204, 202, 202);
 }
@@ -32,7 +31,7 @@ form {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    height: 80%;
+    height: 90%;
     width: 50%;
     margin: auto;
 }
@@ -44,7 +43,7 @@ form input {
     box-sizing: border-box;
     border: 1px solid #b1afaf;
     border-radius: 6px;
-    
+    margin: auto;
 }
 
 form input:focus {
@@ -59,4 +58,21 @@ form button {
     padding: 22px;
     font-weight: bold;
     width: 80%;
+    margin: auto;
+}
+
+form button:hover {
+    cursor: pointer;
+}
+
+.register {
+    text-align: center;
+    font-size: 17px;
+    font-weight: bold;
+    padding-bottom: 100px;
+    
+}
+
+.register a {
+    color: #000;
 }
