@@ -85,3 +85,15 @@ body {
     text-align: center;
     height: 40%;
 }
+
+
+
+@media (max-width: 769px) {
+    .ants_text ,.ant_container{
+        width: 85%;
+    }
+    body{
+        background-image: none;
+    }
+
+}

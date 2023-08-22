@@ -1,16 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
-    <%- include('partials/head') %>
+<%- include('partials/head') %>
 
-
+    <link rel="stylesheet" href="/css/productDetail.css">
     <title>Detalle de producto</title>
-</head>
-<body>
-    
- <%- include('partials/header') %>
+    </head>
 
-        <main>
-           <h1>Este seria el detalle de producto</h1>
-        </main>
+    <body>
 
-<%- include('partials/footer') %>
+        <%- include('partials/header') %>
+
+            <main>
+                <div class="text_container">
+                    <div class="text">
+                        <h3>Detalle del productillo</h3>
+                    </div>
+                </div>
+
+
+                <section class="product_container">
+
+                    <div class="image_container">
+                        <img class="image_product" src="/images/hormigas/Reina-camponotus.jpg" alt="fotoProducto">
+                    </div>
+
+                    <div class="price_container">
+                        <div class="price_product">
+                            <div class="price_product_iva">
+                                <h4>$7.000 </h4>
+                                <h5>(IVA invl.)</h5>
+                            </div>
+                            
+                            <form action="">
+                                <input type="number" name="cantidad" id="cantidad" value="1">
+                                <button type="submit">Añadir al carrito</button>
+                            </form>
+                            <div class="price_description">
+                                <div>Hormiguero de madera artesanal de dimensiones 7×7 cm elaborada con Padauk africano
+                                    por <b>Borham.</b>
+                                </div>
+                                <div>Esta madera es moderadamente pesada, fuerte y dura, con una excelente estabilidad.
+                                    Muy popular por su color único y clasificada como resistente o muy resistente frente
+                                    putrefacción y al ataque de insectos o termitas.</div>
+                                <div>Altura de las galerías: 1,3 – 1,5 cm </div>
+                                <div>Cuenta con dos agujeros de conexión de 10 mm (tapones incluidos).</div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="description_container">
+                    <div class="description_text">
+                        <h4> Descripcion</h4>
+                    </div>
+                    <div class="description">
+                        <div>Hormiguero de madera artesanal de dimensiones 7×7 cm elaborada con <b>Padauk africano.</b>
+                        </div>
+                        <div>Esta madera es moderadamente pesada, fuerte y dura, con una excelente estabilidad. Muy
+                            popular por su color único y clasificada como resistente o muy resistente frente
+                            putrefacción y al ataque de insectos o termitas.</div>
+                        <div>Altura de las galerías: 1,3 – 1,5 cm</div>
+                        <div>Cuenta con dos agujeros de conexión de 10 mm (tapones incluidos).</div>
+                        <div>El hormiguero ha sido recubierto de aceite de linaza ecológico y tanto el acabado como el
+                            pulido está realizado a mano. Al ser un hormiguero artesanal cada modelo tiene un diseño
+                            único y exclusivo de galerías. No hay dos modelos iguales.</div>
+                    </div>
+                </section>
+            </main>
+
+            <%- include('partials/footer') %>

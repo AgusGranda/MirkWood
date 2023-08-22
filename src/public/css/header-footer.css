@@ -94,6 +94,7 @@ footer{
 .icons_media i {
     background-color: #fff;
     color: #252525;
+    outline: 1px solid #252525;
 }
 
 .contact { 
