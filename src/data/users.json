@@ -1,0 +1,18 @@
+[
+    {
+        "id": 1,
+        "firstName": "Agustin",
+        "email": "agus.granda@gmail.com",
+        "password": "123456",
+        "type": "admin",
+        "avatar": ""
+    },
+    {
+        "id": 2,
+        "firstName": "Florencia",
+        "email": "flor.schvap@gmail.com",
+        "password": "123456",
+        "type": "customer",
+        "avatar": ""
+    }
+]

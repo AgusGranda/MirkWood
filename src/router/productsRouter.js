@@ -12,8 +12,7 @@ router.get("/ofertas" , productsController.ofertas);
 router.get("/about" , productsController.about);
 router.get("/cart" , productsController.productCart)
 router.get("/productDetail" , productsController.productDetail);
-// router.get("/editForm" , productsController.productEditForm);
-// router.get("/" , productsController.home);
+router.get("/productForm" , productsController.productForm);
 
 
-module.exports = router;
+module.exports = router; 

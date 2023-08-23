@@ -1,0 +1,56 @@
+[
+    {
+        "id": 1,
+        "name": "Reina Camponotus Muss",
+        "image": "Reina-camponotus",
+        "price": "300",
+        "discount": 0,
+        "category": "ant",
+        "description": "Reina Camponotus Muss"
+    },
+    {
+        "id": 2,
+        "name": "Reina Pseudomirmex",
+        "image": "Reina-camponotus",
+        "price": "350",
+        "discount": 0,
+        "category": "ant",
+        "description": "Reina Pseudomirmex"
+    },
+    {
+        "id": 3,
+        "name": "Reina Crematogaster",
+        "image": "Reina-camponotus",
+        "price": "400",
+        "discount": 0,
+        "category": "ant",
+        "description": "Reina Crematogaster"
+    },
+    {
+        "id": 4,
+        "name": "Antmad Padouk 7 x 7",
+        "image": "AntmadPadouk.jpg",
+        "price": "6000",
+        "discount": 0,
+        "category": "nest",
+        "description": "Hormiguero de madera artesanal de dimensiones 7×7 cm elaborada con Padauk africano por Borham."
+    },
+    {
+        "id": 5,
+        "name": "Antmad Circular",
+        "image": "AntmadCircular",
+        "price": "9000",
+        "discount": 0,
+        "category": "nest",
+        "description": "Hormiguero de madera artesanal circular de 10-12 cm de diámetro elaborado con madero de fresno, roble o nogal por Borham."
+    },
+    {
+        "id": 6,
+        "name": "Antmad",
+        "image": "Antmad",
+        "price": "12000",
+        "discount": 0,
+        "category": "nest",
+        "description": "Hormiguero de madera artesanal de dimensiones 15×15 cm elaborado con madero de haya por Borham."
+    }
+]

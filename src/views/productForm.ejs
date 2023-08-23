@@ -2,7 +2,7 @@
 <html lang="en">
     <%- include('partials/head') %>
 
-    
+    <link rel="stylesheet" href="/css/productForm.css">
     <title>Formulario de productos</title>
 </head>
 <body>
@@ -10,7 +10,33 @@
  <%- include('partials/header') %>
 
         <main>
-           <h1>Este seria el formulario para cargar producto</h1>
+
+            <div class="form_container">
+                <form class="form" action="" method="">
+
+                    <label for="name">Nombre del producto: </label>
+                    <input type="text" name="name" id="name">
+
+                    <label for="price">Precio del producto: </label>
+                    <input type="number" name="price" id="price">
+
+                    <label for="discount">%Descuento%:</label>
+                    <input type="number" name="discount" id="discount">
+
+                    <label for="category">Categoria</label>
+                    <input type="text" name="category" id="category">
+
+                    <label for="description">Descripcion</label>
+                    <textarea name="description" id="description" ></textarea>
+
+                    <input type="file" name="image" id="image">
+
+                    <button type="submit">Cargar Producto</button>
+
+                </form>
+            </div>
+
+          
         </main>
 
 <%- include('partials/footer') %>
