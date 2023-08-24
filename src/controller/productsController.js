@@ -1,12 +1,19 @@
+const fs = require("fs")
+const path = require ("path")
+
+const productFile = path.join(__dirname, "../data/products.json");
+const products = JSON.parse(fs.readFileSync(productFile, "utf-8"));
+
 const controller = {
     home: (req,res) => { 
         res.render("index");
     },
     hormigas: (req,res) =>{
-        res.render("hormigas");
+        res.render("hormigas", {products});
     },
     hormigueros: (req,res) => { 
-        res.render("hormigueros");
+        const nests = products.filter((product) => product.category === "nest");
+        res.render("hormigueros" , {nests});
     },
     ofertas: (req,res) => { 
         res.render("ofertas");

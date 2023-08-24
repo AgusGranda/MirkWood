@@ -2,10 +2,11 @@
     {
         "id": 1,
         "name": "Reina Camponotus Muss",
-        "image": "Reina-camponotus",
+        "image": "Reina-camponotus.jpg",
         "price": "300",
         "discount": 0,
         "category": "ant",
+        "class": "Camponotus",
         "description": "Reina Camponotus Muss"
     },
     {
@@ -15,6 +16,7 @@
         "price": "350",
         "discount": 0,
         "category": "ant",
+        "class": "Pseudomirmex",
         "description": "Reina Pseudomirmex"
     },
     {
@@ -24,6 +26,7 @@
         "price": "400",
         "discount": 0,
         "category": "ant",
+        "class": "Crematogaster",
         "description": "Reina Crematogaster"
     },
     {
@@ -38,7 +41,7 @@
     {
         "id": 5,
         "name": "Antmad Circular",
-        "image": "AntmadCircular",
+        "image": "AntmadCircular.jpg",
         "price": "9000",
         "discount": 0,
         "category": "nest",
@@ -47,7 +50,7 @@
     {
         "id": 6,
         "name": "Antmad",
-        "image": "Antmad",
+        "image": "Antmad.jpg",
         "price": "12000",
         "discount": 0,
         "category": "nest",

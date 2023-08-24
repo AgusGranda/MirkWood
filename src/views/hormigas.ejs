@@ -24,16 +24,25 @@
                             <h4>Camponotus</h4>
                         </div>
                         <div class="ant_box_container">
-                            <div class="ant_box">
-                                <div class="ant_img_container">
-                                    <img class="ant_img" src="/images/hormigas/Reina-camponotus.jpg" alt="fotoProducto">
-                                </div>
-                                <div class="ant_desciption">
-                                    <b>Camponotus-Muss</b>
-                                    <p>$12.000</p>
-                                    <p>Ver producto</p>
-                                </div>
-                            </div>
+
+                            <% products.forEach((product)=> { %>
+                                <% if(product.category==="ant" && product.class === "Camponotus" ){ %>
+                                    <div class="ant_box">
+                                        <div class="ant_img_container">
+                                            <img class="ant_img" src="/images/hormigas/<%= product.image %>"
+                                                alt="fotoProducto">
+                                        </div>
+                                        <div class="ant_desciption">
+                                            <b>
+                                                <%= product.name %>
+                                            </b>
+                                            <p>$ <%= product.price %>
+                                            </p>
+                                            <p>Ver producto</p>
+                                        </div>
+                                    </div>
+                                    <% }}) %>
+
                         </div>
                     </div>
                 </section>

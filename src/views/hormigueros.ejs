@@ -2,39 +2,44 @@
 <html lang="en">
 
 <%- include('partials/head') %>
-<link rel="stylesheet" href="/css/hormigueros.css">
+    <link rel="stylesheet" href="/css/hormigueros.css">
     <title>Hormigueros</title>
-</head>
+    </head>
 
-<body>
+    <body>
 
-    <%- include('partials/header') %>
+        <%- include('partials/header') %>
 
-        <main>
-            <div class="ants_text_container">
-                <div class="ants_text">
-                    <h3>Hormigueros</h3>
-                </div>
-            </div>
-
-
-            <section class="ant_container">
-                <div class="ant_content">
-                    <div class="ant_box_container">
-                        <div class="ant_box">
-                            <div class="ant_img_container">
-                                <img class="ant_img" src="/images/hormigas/Reina-camponotus.jpg" alt="fotoProducto">
-                            </div>
-                            <div class="ant_desciption">
-                                <b>Hormiguero de madera buenardo</b>
-                                <p>$12.000</p>
-                                <p>Ver producto</p>
-                            </div>
-                        </div>
+            <main>
+                <div class="ants_text_container">
+                    <div class="ants_text">
+                        <h3>Hormigueros</h3>
                     </div>
                 </div>
-            </section>
 
-        </main>
 
-        <%- include('partials/footer') %>
+                <section class="ant_container">
+                    <div class="ant_content">
+                        <div class="ant_box_container">
+
+                            <% nests.forEach((nest)=>{ %>
+                                    <div class="ant_box">
+                                        <div class="ant_img_container">
+                                            <img class="ant_img" src="/images/nest/<%= nest.image%>"
+                                                alt="fotoProducto">
+                                        </div>
+                                        <div class="ant_desciption">
+                                            <b><%=nest.name%></b>
+                                            <p>$ <%=nest.price%></p>
+                                            <p>Ver producto</p>
+                                        </div>
+                                    </div>
+                                    <% }) %>
+
+                        </div>
+                    </div>
+                </section>
+
+            </main>
+
+            <%- include('partials/footer') %>
