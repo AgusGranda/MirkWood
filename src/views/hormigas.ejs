@@ -27,9 +27,9 @@
 
                             <% products.forEach((product)=> { %>
                                 <% if(product.category==="ant" && product.class === "Camponotus" ){ %>
-                                    <div class="ant_box">
+                                    <a class="ant_box" href="/product/<%= product.id %>">
                                         <div class="ant_img_container">
-                                            <img class="ant_img" src="/images/hormigas/<%= product.image %>"
+                                            <img class="ant_img" src="/images/products/<%= product.image %>"
                                                 alt="fotoProducto">
                                         </div>
                                         <div class="ant_desciption">
@@ -40,7 +40,7 @@
                                             </p>
                                             <p>Ver producto</p>
                                         </div>
-                                    </div>
+                                    </a>
                                     <% }}) %>
 
                         </div>
@@ -89,3 +89,5 @@
             </main>
 
             <%- include('partials/footer') %>
+
+

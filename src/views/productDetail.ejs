@@ -21,20 +21,30 @@
                 <section class="product_container">
 
                     <div class="image_container">
-                        <img class="image_product" src="/images/hormigas/Reina-camponotus.jpg" alt="fotoProducto">
+                        <img class="image_product" src="/images/products/<%= product.image %>" alt="fotoProducto">
                     </div>
 
                     <div class="price_container">
                         <div class="price_product">
                             <div class="price_product_iva">
-                                <h4>$7.000 </h4>
+                                <h4>$<%= product.price %>
+                                </h4>
                                 <h5>(IVA invl.)</h5>
                             </div>
-                            
-                            <form action="">
-                                <input type="number" name="cantidad" id="cantidad" value="1">
-                                <button type="submit">Añadir al carrito</button>
-                            </form>
+
+                            <div class="actions">
+                                <form class="carrito" action="">
+                                    <input type="number" name="cantidad" id="cantidad" value="1">
+                                    <button type="submit">Añadir al carrito</button>
+                                </form>
+                                <div class="delete">
+                                    <a href="/product/<%= product.id %>/edit"><button>Editar</button></a>
+                                    <form  action="/product/<%= product.id %>?_method=DELETE" method="POST">
+                                        <button>Eliminar</button>
+                                    </form>
+                                </div>
+                            </div>
+
                             <div class="price_description">
                                 <div>Hormiguero de madera artesanal de dimensiones 7×7 cm elaborada con Padauk africano
                                     por <b>Borham.</b>

@@ -11,8 +11,18 @@ router.get("/hormigueros" , productsController.hormigueros);
 router.get("/ofertas" , productsController.ofertas);
 router.get("/about" , productsController.about);
 router.get("/cart" , productsController.productCart)
-router.get("/productDetail" , productsController.productDetail);
-router.get("/productForm" , productsController.productForm);
+router.get("/product/:id" , productsController.productDetail);
 
+
+// Create one product // 
+router.get("/productForm" , productsController.productForm);
+router.post("/productForm", productsController.process_productForm);
+
+// Edit one product // 
+router.get("/product/:id/edit",productsController.productEditForm)
+router.put("/product/:id" , productsController.process_productEditForm)
+
+// Delete one product //
+router.delete("/product/:id", productsController.delete)
 
 module.exports = router; 

@@ -70,21 +70,36 @@ body {
     align-items: center;
 }
 
+.actions {
+    display: flex;
+    justify-content: space-between;
+}
+.carrito{
+    display: flex;
+    width: 70%;
+}
+.delete{
+    display: flex;
+    width: 30%;
+    justify-content: space-around;
+}
+
+.carrito input, button{
+    padding: 8px;
+}
+.carrito input{
+    width: 10%;
+    margin-right: 25px;
+
+}
+
+
 .price_description{
     display: flex;
     flex-direction: column;
     height: 70%;
     justify-content: space-between;
 }
-
-.price_product form input, button{
-    padding: 8px;
-}
-.price_product form input{
-    width: 10%;
-    margin-right: 12px;
-}
-
 .description_container {
     width: 65%;
     margin: auto;
@@ -144,7 +159,7 @@ body {
         border-top: 1px solid rgb(204, 202, 202);
     }
     .price_product form {
-        width: 190px;
+       
     }
     .description_container{
         height: 400px;

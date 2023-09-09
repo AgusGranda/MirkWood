@@ -2,15 +2,51 @@
 <html lang="en">
     <%- include('partials/head') %>
 
-   
-    <title>Editar formularios</title>
+    <link rel="stylesheet" href="/css/productForm.css">
+    <title>Formulario de productos</title>
 </head>
 <body>
     
  <%- include('partials/header') %>
 
         <main>
-           <h1>Este seria el formulario para editar productos</h1>
+
+            <div class="form_container">
+                <form class="form" action="/product/<%= productToEdit.id %>?_method=PUT" method="POST">
+
+                    <label for="name">Nombre del producto: </label>
+                    <input value="<%= productToEdit.name %>" type="text" name="name" id="name">
+
+                    <label for="price">Precio del producto: </label>
+                    <input value="<%= productToEdit.price %>" type="number" name="price" id="price">
+
+                    <label for="discount">Descuento%:</label>
+                    <input value="<%= productToEdit.discount %>" type="number" name="discount" id="discount">
+
+                    <label for="category">Categoria</label>
+                    <select value="<%= productToEdit.category %>" name="category" id="category">
+                        <option value=""><%= productToEdit.category %></option>
+                        <option value="ant">Ant</option>
+                        <option value="nest">Nest</option>
+                    </select>
+                    <select value="<%= productToEdit.category %>"  name="class" id="class">
+                        <option value="">Seleccione una Clase</option>
+                        <option value="Camponotus">Camponotus</option>
+                        <option value="Pseudomirmex">Pseudomirmex</option>
+                        <option value="Crematogaster">Crematogaster</option>
+                    </select>
+
+                    <label for="description">Descripcion</label>
+                    <textarea  name="description" id="description" ><%= productToEdit.description %></textarea>
+
+                    <input type="file" name="image" id="image">
+
+                    <button type="submit">Editar Producto</button>
+ 
+                </form>
+            </div>
+
+          
         </main>
 
 <%- include('partials/footer') %>

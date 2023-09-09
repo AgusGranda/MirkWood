@@ -23,18 +23,17 @@
                         <div class="ant_box_container">
 
                             <% nests.forEach((nest)=>{ %>
-                                    <div class="ant_box">
-                                        <div class="ant_img_container">
-                                            <img class="ant_img" src="/images/nest/<%= nest.image%>"
-                                                alt="fotoProducto">
-                                        </div>
-                                        <div class="ant_desciption">
-                                            <b><%=nest.name%></b>
-                                            <p>$ <%=nest.price%></p>
-                                            <p>Ver producto</p>
-                                        </div>
+                                <a class="ant_box" href="/product/<%= nest.id %>">
+                                    <div class="ant_img_container">
+                                        <img class="ant_img" src="/images/products/<%= nest.image%>" alt="fotoProducto">
                                     </div>
-                                    <% }) %>
+                                    <div class="ant_desciption">
+                                        <b><%=nest.name%></b>
+                                        <p>$ <%=nest.price%></p>
+                                        <p>Ver producto</p>
+                                    </div>
+                                </a>
+                                <% }) %>
 
                         </div>
                     </div>
