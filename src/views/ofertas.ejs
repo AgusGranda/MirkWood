@@ -1,38 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
-    <%- include('partials/head') %>
+<%- include('partials/head') %>
 
     <link rel="stylesheet" href="/css/ofertas.css">
     <title>Ofertas</title>
-</head>
-<body>
-    
- <%- include('partials/header') %>
+    </head>
 
-        <main>
-            <div class="ants_text_container">
-                <div class="ants_text">
-                    <h3>Ofertas</h3>
-                </div>
-            </div>
+    <body>
 
+        <%- include('partials/header') %>
 
-            <section class="ant_container">
-                <div class="ant_content">
-                    <div class="ant_box_container">
-                        <div class="ant_box">
-                            <div class="ant_img_container">
-                                <img class="ant_img" src="/images/hormigas/Reina-camponotus.jpg" alt="fotoProducto">
-                            </div>
-                            <div class="ant_desciption">
-                                <b>Hormiguero de madera buenardo</b>
-                                <p>$12.000</p>
-                                <p>Ver producto</p>
-                            </div>
-                        </div>
+            <main>
+                <div class="ants_text_container">
+                    <div class="ants_text">
+                        <h3>Ofertas</h3>
                     </div>
                 </div>
-            </section>
-        </main>
 
-<%- include('partials/footer') %>
+
+                <section class="ant_container">
+                    <div class="ant_content">
+                        <% offer.forEach(oferta=> { %>
+                            <div class="ant_box_container">
+                                <a class="ant_box" href="/product/<%= oferta.id %>">
+                                    <div class="ant_img_container">
+                                        <img class="ant_img" src="/images/products/<%= oferta.image %>"
+                                            alt="fotoProducto">
+                                    </div>
+                                    <div class="ant_desciption">
+                                        <b><%= oferta.name %></b>
+                                        <p><%= oferta.price %></p>
+                                        <p>Ver producto</p>
+                                    </div>
+                                </a>
+                            </div>
+                        <%  }); %>
+                    </div>    
+                </section>
+            </main>
+
+            <%- include('partials/footer') %>

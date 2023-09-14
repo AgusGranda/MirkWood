@@ -44,7 +44,7 @@
   "name": "Antmad Circular",
   "image": "AntmadCircular.jpg",
   "price": "9000",
-  "discount": 0,
+  "discount": 15,
   "category": "nest",
   "class": "wood",
   "description": "Hormiguero de madera artesanal circular de 10-12 cm de diámetro elaborado con madero de fresno, roble o nogal por Borham."
@@ -54,7 +54,7 @@
   "name": "Antmad",
   "image": "Antmad.jpg",
   "price": "12000",
-  "discount": 0,
+  "discount": "0",
   "category": "nest",
   "class": "wood",
   "description": "Hormiguero de madera artesanal de dimensiones 15×15 cm elaborado con madero de haya por Borham."

@@ -29,11 +29,13 @@
                         <option value="ant">Ant</option>
                         <option value="nest">Nest</option>
                     </select>
-                    <select value="<%= productToEdit.category %>"  name="class" id="class">
-                        <option value="">Seleccione una Clase</option>
+                    <label for="class">clase</label>
+                    <select value="<%= productToEdit.class %>"  name="class" id="class">
+                        <option value=""><%= productToEdit.class %></option>
                         <option value="Camponotus">Camponotus</option>
                         <option value="Pseudomirmex">Pseudomirmex</option>
                         <option value="Crematogaster">Crematogaster</option>
+                        <option value="wood">wood</option>
                     </select>
 
                     <label for="description">Descripcion</label>

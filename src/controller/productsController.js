@@ -16,7 +16,8 @@ const controller = {
         res.render("hormigueros", { nests });
     },
     ofertas: (req, res) => {
-        res.render("ofertas");
+        const offer = products.filter((product) => product.discount > 0);
+        res.render("ofertas", { offer });
     },
     about: (req, res) => {
         res.render("about");
