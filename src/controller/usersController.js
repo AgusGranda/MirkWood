@@ -25,15 +25,15 @@ const controller = {
                 ...req.body,
                 type: "customer",
                 avatar: "",
-            }    
+            }
             users.push(newUser);
             fs.writeFileSync(usersFile, JSON.stringify(users, null, " "));
             res.redirect("login")
 
         }else{
             res.render("register" , {
-                errors : errors.array(),
-                old
+                errors : errors.mapped(),
+                oldData : req.body
             });
         }
 

@@ -19,15 +19,27 @@
                 <div class="form_container">
                     <form action="/users/register" method="POST">
                         <input type="text" name="name" id="name" placeholder="Nombre"
-                        value="<%= locals.old && old.name ? old.name : '' %>">
-                        <% if(locals.errors) { errors.forEach(error => { %>
-                            <p> <%= error.msg %></p>
-                        <% })};%> 
+                        value="<%= locals.oldData && oldData.name ? oldData.name : '' %>">
+                        <div>
+                            <% if(locals.errors && errors.name){  %>
+                                <p> <%= errors.name.msg %></p>
+                            <% };%> 
+                        </div>
 
                         <input type="email" name="email" id="email" placeholder="Email"
-                        value="<%= locals.old && old.email ? old.email : '' %>">
+                        value="<%= locals.oldData && oldData.email ? oldData.email : '' %>">
+                        <div>
+                            <% if(locals.errors && errors.email){  %>
+                                <p> <%= errors.email.msg %></p>
+                            <% };%> 
+                        </div>
 
                         <input type="password" name="password" id="password" placeholder="Password">
+                        <div>
+                            <% if(locals.errors && errors.password){  %>
+                                <p> <%= errors.password.msg %></p>
+                            <% };%> 
+                        </div>
 
                         <button type="submit">Registrarme</button>
                     </form>

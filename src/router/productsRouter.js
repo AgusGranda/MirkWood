@@ -1,8 +1,9 @@
-const express = require("express")
-const router = express.Router()
+const express = require("express");
+const router = express.Router();
 
 
-const productsController = require ("../controller/productsController.js") 
+const productsController = require ("../controller/productsController.js");
+const productsValidations = require("../middlewares/productsValidation.js");
 
 
 router.get("/" , productsController.home);
@@ -16,13 +17,13 @@ router.get("/product/:id" , productsController.productDetail);
 
 // Create one product // 
 router.get("/productForm" , productsController.productForm);
-router.post("/productForm", productsController.process_productForm);
+router.post("/productForm",productsValidations, productsController.process_productForm);
 
 // Edit one product // 
-router.get("/product/:id/edit",productsController.productEditForm)
-router.put("/product/:id" , productsController.process_productEditForm)
+router.get("/product/:id/edit",productsController.productEditForm);
+router.put("/product/:id" , productsValidations, productsController.process_productEditForm);
 
 // Delete one product //
-router.delete("/product/:id", productsController.delete)
+router.delete("/product/:id", productsController.delete);
 
 module.exports = router; 

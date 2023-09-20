@@ -1,5 +1,5 @@
 const express = require("express")
-const validatios = require("../middlewares/validatios.js")
+const loginValidation = require("../middlewares/loginValidation.js")
 const userController = require("../controller/usersController.js")
 
 const router = express.Router()
@@ -9,6 +9,6 @@ router.get("/register",userController.register)
 
 // new users
 
-router.post("/register" , validatios, userController.processRegister)
+router.post("/register" , loginValidation, userController.processRegister)
 
 module.exports = router;
