@@ -78,6 +78,15 @@ form button:hover {
 }
 
 
+.validation-err{
+    color: rgb(238, 54, 54);
+    padding: 0 22px;
+    width: 80%;
+    margin: 0 auto;
+}
+
+
+
 @media (max-width: 769px) {
     .text{
         width: 85%;

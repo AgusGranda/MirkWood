@@ -3,7 +3,9 @@ const router = express.Router();
 
 
 const productsController = require ("../controller/productsController.js");
+
 const productsValidations = require("../middlewares/productsValidation.js");
+const uploadFile = require("../middlewares/multer.js")
 
 
 router.get("/" , productsController.home);
@@ -17,7 +19,7 @@ router.get("/product/:id" , productsController.productDetail);
 
 // Create one product // 
 router.get("/productForm" , productsController.productForm);
-router.post("/productForm",productsValidations, productsController.process_productForm);
+router.post("/productForm",uploadFile.single("image"), productsValidations, productsController.process_productForm);
 
 // Edit one product // 
 router.get("/product/:id/edit",productsController.productEditForm);

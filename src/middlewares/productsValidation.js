@@ -4,7 +4,6 @@ const path = require("path");
 const productsValidation = [
     body("name").notEmpty().withMessage('Nombre requerido'),
     body("price").notEmpty().withMessage('Precio requerido'),
-    body("discount").notEmpty().withMessage('Descuento requerido'),
     body("category").notEmpty().withMessage('categoria requerida'),
     body("class").notEmpty().withMessage('clase requerida'),
     body("description").notEmpty().withMessage('Descripción requerida'),

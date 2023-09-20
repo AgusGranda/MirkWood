@@ -12,35 +12,62 @@
         <main>
 
             <div class="form_container">
-                <form class="form" action="/productForm" method="POST">
+                <form class="form" action="/productForm" method="POST" enctype="multipart/form-data">
 
-                    <label for="name">Nombre del producto: </label>
-                    <input type="text" name="name" id="name">
+                    <input type="text" name="name" id="name" placeholder="Nombre del producto:" 
+                    value="<%= locals.oldData && oldData.name ? oldData.name : '' %>">
+                    
+                    <div class="validation-err">
+                        <% if (locals.errors && errors.name) { %>
+                         <p><%= errors.name.msg %></p>
+                        <% } %>
+                    </div>
 
-                    <label for="price">Precio del producto: </label>
-                    <input type="number" name="price" id="price">
+                    <input type="number" name="price" id="price" placeholder="Precio del producto:"
+                    value="<%= locals.oldData && oldData.price ? oldData.price : '' %>">
+                    <div class="validation-err">
+                        <% if (locals.errors && errors.price) { %>
+                         <p><%= errors.price.msg %></p>
+                        <% } %>
+                    </div>
 
-                    <label for="discount">Descuento%:</label>
-                    <input type="number" name="discount" id="discount">
+                    <input type="number" name="discount" id="discount" placeholder="Descuento%:"
+                    value="<%= locals.oldData && oldData.discount ? oldData.discount : '' %>">
+                    <div class="validation-err">
+                        <% if (locals.errors && errors.discount) { %>
+                         <p><%= errors.discount.msg %></p>
+                        <% } %>
+                    </div>
 
-                    <label for="category">Categoria</label>
-                    <select name="category" id="category">
-                        <option value="">Seleccione una categoria</option>
-                        <option value="ant">Ant</option>
-                        <option value="nest">Nest</option>
+
+                    <select name="category" id="category" >
+                        <option value="">Seleccione una Categoria</option>
+                        <option value="ant" <%= locals.oldData && ("ant" === oldData.category) ? "selected" :null  %>>Ant</option>
+                        <option value="nest" <%= locals.oldData && ("nest" === oldData.category) ? "selected" :null  %>>Nest</option>
                     </select>
-                    <label for="class">Clase</label>
+
                     <select name="class" id="class">
                         <option value="">Seleccione una Clase</option>
-                        <option value="Camponotus">Camponotus</option>
-                        <option value="Pseudomirmex">Pseudomirmex</option>
-                        <option value="Crematogaster">Crematogaster</option>
+                        <option value="Camponotus" <%= locals.oldData && ("Camponotus" === oldData.class) ? "selected" :null  %>>Camponotus</option>
+                        <option value="Pseudomirmex" <%= locals.oldData && ("Pseudomirmex" === oldData.class) ? "selected" :null  %>>Pseudomirmex</option>
+                        <option value="Crematogaster" <%= locals.oldData && ("Crematogaster" === oldData.class) ? "selected" :null  %>>Crematogaster</option>
                     </select>
 
-                    <label for="description">Descripcion</label>
-                    <textarea name="description" id="description" ></textarea>
+                    <textarea name="description" id="description" placeholder="Descripcion"
+                    ><%= locals.oldData && oldData.description ? oldData.description : '' %></textarea>
+                    <div class="validation-err">
+                        <% if (locals.errors && errors.description) { %>
+                         <p><%= errors.description.msg %></p>
+                        <% } %>
+                    </div>
 
-                    <input type="file" name="image" id="image">
+                    <input type="file" name="image" id="image" 
+                    value="<%= locals.oldData && oldData.image ? oldData.image : '' %>">
+                    <div class="validation-err">
+                        <% if (locals.errors && errors.image) { %>
+                         <p><%= errors.image.msg %></p>
+                        <% } %>
+                    </div>
 
                     <button type="submit">Cargar Producto</button>
 
