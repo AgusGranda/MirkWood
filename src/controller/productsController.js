@@ -40,7 +40,6 @@ const controller = {
         if(errors.isEmpty()){
             const newProduct = {
                 id: products[products.length - 1].id + 1,
-                image: "aloja",
                 ...req.body
             };
     
