@@ -4,15 +4,20 @@
   "name": "Agustin",
   "email": "agus.granda@gmail.com",
   "password": "123456",
-  "type": "admin",
-  "avatar": ""
+  "type": "admin"
  },
  {
   "id": 2,
   "name": "Florencia",
   "email": "flor.schvap@gmail.com",
   "password": "123456",
-  "type": "customer",
-  "avatar": ""
+  "type": "customer"
+ },
+ {
+  "id": 3,
+  "name": "borham",
+  "email": "borham@gmail.com",
+  "password": "$2a$10$ipBfHY2Ecy.hxSsonTothupqmY70LajveqXv6WsDCDkrhdGYYG/ia",
+  "type": "customer"
  }
 ]

@@ -12,6 +12,9 @@
         </ul>
         <ul class="log">
             <li><a href="/users/login"><i class="fa-solid fa-user"></i></a></li>
+            <% if (locals.isLogged) { %>
+                <li><a href="/users/logout"><i class="fa-solid fa-right-from-bracket"></i></a></li>
+            <% } %>
             <li><a href="/cart"><i class="fa-solid fa-cart-shopping"></i></a></li>
         </ul>
     </nav>

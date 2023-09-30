@@ -1,13 +1,17 @@
 const express = require("express");
 const path = require("path")
-const methodOverride = require("method-override")
-
+const methodOverride = require("method-override");
+const session = require("express-session");
+const userLogged = require("./middlewares/userLogged.js")
 
 const productsRouter = require("./router/productsRouter");
-const userRouter = require("./router/usersRouter")
+const userRouter = require("./router/usersRouter");
 
 
 const app = express();
+
+
+
 
 // EJS
 app.set('view engine', 'ejs'); // avisamos que usaremos ejs 
@@ -20,6 +24,14 @@ app.use(methodOverride("_method"));            // para poder usar los metodos ht
 app.use(express.json());                       // para procesar los datos JSON en el body
 app.use(express.urlencoded({extended:false})); // Para capturar los datos del body.
 
+app.use(session({                              // para poner a session como middleware de aplicacion.
+    secret:"this is a secret",
+    resave: false,
+    saveUninitialized: false
+}))
+
+app.use(userLogged)                           // para ocultar del nav el logout (ponerlo siempre despues de session)
+ 
 
 // routes
 

@@ -16,10 +16,21 @@
             </div>
 
             <div class="form_container">
-                <form action="">
-                    <input type="email" name="email" id="email" placeholder="Email">
+                <form action="/users/login" method="POST">
+                    <input type="email" name="email" id="email" placeholder="Email"
+                    value="<%= locals.oldData && oldData.email ? oldData.email : "" %>">
+                    <div class="validation-err">
+                        <% if(locals.errors && errors.email){  %>
+                            <p> <%= errors.email.msg %></p>
+                        <% };%> 
+                    </div>
                     
                     <input type="password" name="password" id="password" placeholder="Password">
+                    <div class="validation-err">
+                        <% if(locals.errors && errors.password){  %>
+                            <p> <%= errors.password.msg %></p>
+                        <% };%> 
+                    </div>
                     
                     <button type="submit">Ingresar</button>
                 </form>
